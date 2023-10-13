@@ -4,7 +4,7 @@ import http from 'http';
 import { Server } from 'socket.io';
 
 const app = express();
-const SOCKET_URL = process.env.SOCKET_URL || "http://localhost:4000";
+const port = 4000;
 
 app.use(cors());
 
@@ -29,6 +29,6 @@ io.on('connection', (socket) => {
     })
 });
 
-server.listen(SOCKET_URL, () => {
+server.listen(port, () => {
     console.log('サーバーが立ち上がりました。')
 })
