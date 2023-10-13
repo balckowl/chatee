@@ -15,7 +15,7 @@ const UserLogin = ({ setUser }) => {
         <div>
             <div className="container">
                 <div className="row d-flex justify-content-center">
-                    <div className="col-7 shadow">
+                    <div className="col-lg-7 shadow">
                         <div>
                             <h1>Entrance</h1>
                         </div>
