@@ -1,0 +1,68 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  padding: 20px;
+  height: 400px;
+  overflow: auto;
+}
+
+.resiver, .sender{
+  padding-block: 5px;
+}
+
+.resiver .user-box{
+  margin-right: 5px;
+}
+
+.sender .user-box{
+  margin-left: 5px;
+}
+
+.icon-box img{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.username{
+  font-size: 10px;
+}
+
+.resiver .chat{
+  padding: 7px 14px;
+  color: white;
+  background-color: navy;
+  border-radius: 10px 50px 50px 50px;
+  font-size: 15px;
+}
+
+.sender .chat{
+  padding: 7px 14px;
+  color: white;
+  background-color: navy;
+  border-radius: 50px 10px 50px 50px;
+  font-size: 15px;
+}
+
+.input-box{
+  width: 100%;
+}
+
+.chat-input{
+  width: 100%;
+}
+
+.footer{
+  padding: 20px;
+}
+
+.logout{
+  padding: 4px 10px;
+  color: white;
+  background-color: burlywood;
+  border-radius: 3px;
+}
