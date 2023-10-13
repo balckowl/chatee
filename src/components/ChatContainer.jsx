@@ -5,7 +5,10 @@ import { io } from 'socket.io-client';
 import InputText from './InputText';
 
 const ChatContainer = () => {
-    let socket = io('http://localhost:3000');
+
+    const SOCKET_URL = process.env.SOCKET_URL || "http://localhost:4000";
+    
+    let socket = io(SOCKET_URL);
 
     const [chats, setChats] = useState([])
     const [user, setUser] = useState(localStorage.getItem('user'))
