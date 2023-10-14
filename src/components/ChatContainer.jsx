@@ -5,10 +5,8 @@ import { io } from 'socket.io-client';
 import InputText from './InputText';
 
 const ChatContainer = () => {
-
-    const SOCKET_URL = process.env.SOCKET_URL || "http://localhost:4000";
     
-    let socket = io(SOCKET_URL);
+    let socket = io('https://chatee-ca9f.onrender.com');
 
     const [chats, setChats] = useState([])
     const [user, setUser] = useState(localStorage.getItem('user'))
